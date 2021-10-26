@@ -29,7 +29,5 @@ var a='data-src';var e=document.querySelector('.js3');if(e.hasAttribute('src')){
 var e=document.querySelector('.js4');e.setAttribute('src',(dpi>1)?'images/6s-logo-black-60.png':'images/6s-logo-black-30.png');}}};
 if(!window.HTMLPictureElement){$(window).resize(r);r();}
 (function(){$('a[href^="#"]:not(.allowConsent,.noConsent,.denyConsent,.removeConsent)').each(function(i,e){$(e).click(function(){var t=e.hash.length>1?$('[name="'+e.hash.slice(1)+'"]').offset().top:0;return $("html, body").animate({scrollTop:t},400),!1})})})();
-initMenu($('#m1')[0]);
-initMenu($('#m2')[0]);
 ldsrc('.js5');ldsrcset('.js26 source');ldsrc('.js3');ldsrcset('.js27 source');
 });
