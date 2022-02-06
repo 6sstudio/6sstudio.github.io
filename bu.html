@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bitcoin University</title>
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<style>.anim{visibility:hidden}</style>
+<link rel="preload" href="css/EBGaramond-Regular.woff2" as="font" crossorigin>
+<style>html,body{-webkit-text-zoom:reset !important}@font-face{font-display:block;font-family:"EB Garamond";src:url('css/EBGaramond-Regular.woff2') format('woff2'),url('css/EBGaramond-Regular.woff') format('woff');font-weight:400}@font-face{font-display:block;font-family:"Muli";src:url('css/Muli-Regular.woff2') format('woff2'),url('css/Muli-Regular.woff') format('woff');font-weight:400}body>div{font-size:0}p,span,h1,h2,h3,h4,h5,h6,a,li{margin:0;word-spacing:normal;word-wrap:break-word;-ms-word-wrap:break-word;pointer-events:auto;-ms-text-size-adjust:none !important;-moz-text-size-adjust:none !important;-webkit-text-size-adjust:none !important;text-size-adjust:none !important;max-height:1000000000px}sup{font-size:inherit;vertical-align:baseline;position:relative;top:-0.4em}sub{font-size:inherit;vertical-align:baseline;position:relative;top:0.4em}ul{display:block;word-spacing:normal;word-wrap:break-word;list-style-type:none;padding:0;margin:0;-moz-padding-start:0;-khtml-padding-start:0;-webkit-padding-start:0;-o-padding-start:0;-padding-start:0;-webkit-margin-before:0;-webkit-margin-after:0}li{display:block;white-space:normal}li p{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}form{display:inline-block}a{text-decoration:inherit;color:inherit;-webkit-tap-highlight-color:rgba(0,0,0,0)}textarea{resize:none}.shm-l{float:left;clear:left}.shm-r{float:right;clear:right}.btf{display:none}.plyr{min-width:0 !important}html{font-family:sans-serif}body{font-size:0;margin:0}audio,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0;outline:0}b,strong{font-weight:700}dfn{font-style:italic}h1,h2,h3,h4,h5,h6{font-size:1em;line-height:1;margin:0}img{border:0}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=submit]{-webkit-appearance:button;cursor:pointer;box-sizing:border-box;white-space:normal}input[type=text],input[type=password],textarea{-webkit-appearance:none;appearance:none;box-sizing:border-box}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;box-sizing:border-box;border-color:#ddd}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}blockquote{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inline-end:0}:-webkit-full-screen-ancestor:not(iframe){-webkit-clip-path:initial!important}
+html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}@-webkit-keyframes fadeInDown{from{opacity:0;-webkit-transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:translate3d(0, 0, 0)}}@keyframes fadeInDown{from{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:translate3d(0, 0, 0)}}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}
+.animated{-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}#b{background-color:#000}.ps71{position:relative;margin-top:49px}.v5{display:block;vertical-align:top}.s91{pointer-events:none;min-width:1200px;width:1200px;margin-left:auto;margin-right:auto;min-height:3885px}.v6{display:inline-block;vertical-align:top}.ps72{position:relative;margin-left:188px;margin-top:0}.s92{min-width:750px;width:750px;min-height:157px}.ps73{position:relative;margin-left:0;margin-top:0}.w3{line-height:0}.s93{min-width:750px;width:750px;min-height:139px}.c65{z-index:1;pointer-events:auto;overflow:hidden;height:139px}.p6{text-indent:0;padding-bottom:0;padding-right:0;text-align:center}.f20{font-family:"EB Garamond";font-size:67px;font-size:calc(67px * var(--f));line-height:1.822;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#e2e2e2;background-color:initial;text-shadow:none}.ps74{position:relative;margin-left:0;margin-top:-60px}.s94{min-width:750px;width:750px;min-height:78px}.c66{z-index:2;pointer-events:auto;overflow:hidden;height:78px}.f21{font-family:Muli;font-size:37px;font-size:calc(37px * var(--f));line-height:1.785;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#e2e2e2;background-color:initial;text-shadow:none}.ps75{position:relative;margin-left:0;margin-top:60px}.s95{min-width:1200px;width:1200px;min-height:694px}.ps76{position:relative;margin-left:0;margin-top:12px}.s96{min-width:750px;width:750px;min-height:75px}.c67{z-index:4;pointer-events:auto;overflow:hidden;height:75px}.p7{text-indent:0;padding-bottom:0;padding-right:0;text-align:left}.ps77{position:relative;margin-left:38px;margin-top:-30px}.s97{min-width:750px;width:750px;min-height:555px}.c68{z-index:3;pointer-events:auto;overflow:hidden;height:78px}.ps78{position:relative;margin-left:0;margin-top:-30px}.s98{min-width:750px;width:750px;min-height:507px}.s99{min-width:750px;width:750px;min-height:79px}.c69{z-index:5;pointer-events:auto;overflow:hidden;height:79px}.ps79{position:relative;margin-left:0;margin-top:-30px}.s100{min-width:750px;width:750px;min-height:79px}.c70{z-index:6;pointer-events:auto;overflow:hidden;height:79px}.ps80{position:relative;margin-left:0;margin-top:-26px}.c71{z-index:7;pointer-events:auto;overflow:hidden;height:78px}.ps81{position:relative;margin-left:0;margin-top:-18px}.c72{z-index:8;pointer-events:auto;overflow:hidden;height:75px}.ps82{position:relative;margin-left:0;margin-top:-23px}.c73{z-index:9;pointer-events:auto;overflow:hidden;height:75px}.ps83{position:relative;margin-left:0;margin-top:-26px}.s101{min-width:750px;width:750px;min-height:79px}.c74{z-index:10;pointer-events:auto;overflow:hidden;height:79px}.ps84{position:relative;margin-left:0;margin-top:-23px}.c75{z-index:12;pointer-events:auto;overflow:hidden;height:79px}.c76{z-index:29;pointer-events:auto;overflow:hidden;height:75px}.ps85{position:relative;margin-left:0;margin-top:-19px}.c77{z-index:30;pointer-events:auto;overflow:hidden;height:79px}.ps86{position:relative;margin-left:0;margin-top:-87px}.s102{min-width:412px;width:412px;min-height:694px}.s103{min-width:412px;width:412px;min-height:79px}.c78{pointer-events:auto;overflow:hidden;height:79px}.s104{min-width:412px;width:412px;min-height:233px}.s105{min-width:412px;width:412px;min-height:233px;height:233px}.c79{z-index:11;pointer-events:auto}.i12{position:absolute;left:0;width:412px;height:233px;top:0}.i13{width:100%;height:100%;display:inline-block}.ps87{position:relative;margin-left:11px;margin-top:-222px}.s106{min-width:390px;width:390px;min-height:45px}.c80{z-index:16;pointer-events:auto;overflow:hidden;height:45px}.f22{font-family:"EB Garamond";font-size:18px;font-size:calc(18px * var(--f));line-height:1.834;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#000;background-color:initial;text-shadow:none}.ps88{position:relative;margin-left:0;margin-top:-169px}.s107{min-width:412px;width:412px;min-height:169px}.c81{z-index:17;pointer-events:auto;overflow:hidden;height:169px}.ps89{position:relative;margin-left:0;margin-top:22px}.s108{min-width:412px;width:412px;min-height:120px}.c82{pointer-events:auto;overflow:hidden;height:120px}.f23{font-family:Muli;font-size:37px;font-size:calc(37px * var(--f));line-height:1.001;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#e2e2e2;background-color:initial;text-shadow:none}.ps90{position:relative;margin-left:0;margin-top:8px}.s109{min-width:412px;width:412px;min-height:232px}.s110{min-width:412px;width:412px;min-height:232px;height:232px}.c83{z-index:15;pointer-events:auto}.i14{position:absolute;left:0;width:412px;height:232px;top:0}.ps91{position:relative;margin-left:11px;margin-top:-217px}.s111{min-width:390px;width:390px;min-height:41px}.c84{z-index:18;pointer-events:auto;overflow:hidden;height:41px}.c85{z-index:19;pointer-events:auto;overflow:hidden;height:169px}.ps92{position:relative;margin-left:38px;margin-top:60px}.c86{pointer-events:auto;overflow:hidden;height:75px}.ps93{position:relative;margin-left:38px;margin-top:0}.s112{min-width:1113px;width:1113px;min-height:266px}.s113{min-width:750px;width:750px;min-height:266px}.ps94{position:relative;margin-left:37px;margin-top:0}.s114{min-width:701px;width:701px;min-height:169px}.s115{min-width:300px;width:300px;min-height:169px}.s116{min-width:300px;width:300px;min-height:169px;height:169px}.c87{z-index:20;pointer-events:auto}.i15{position:absolute;left:0;width:300px;height:169px;top:0}.ps95{position:relative;margin-left:26px;margin-top:-158px}.s117{min-width:248px;width:248px;min-height:150px}.c88{z-index:31;pointer-events:auto;overflow:hidden;height:150px}.ps96{position:relative;margin-left:101px;margin-top:0}.c89{z-index:28;pointer-events:auto}.ps97{position:relative;margin-left:23px;margin-top:-158px}.s118{min-width:251px;width:251px;min-height:150px}.c90{z-index:32;pointer-events:auto;overflow:hidden;height:150px}.ps98{position:relative;margin-left:93px;margin-top:0}.s119{min-width:589px;width:589px;min-height:41px}.s120{min-width:188px;width:188px;min-height:41px}.c91{z-index:56;pointer-events:auto;overflow:hidden;height:41px}.f24{font-family:"EB Garamond";font-size:18px;font-size:calc(18px * var(--f));line-height:1.834;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#fff;background-color:initial;text-shadow:none}.ps99{position:relative;margin-left:214px;margin-top:0}.s121{min-width:187px;width:187px;min-height:37px}.c92{z-index:84;pointer-events:auto;overflow:hidden;height:37px}.ps100{position:relative;margin-left:0;margin-top:-22px}.c93{z-index:35;pointer-events:auto;overflow:hidden;height:78px}.ps101{position:relative;margin-left:63px;margin-top:4px}.s122{min-width:300px;width:300px;min-height:206px}.s123{min-width:300px;width:300px;min-height:169px;height:169px}.c94{z-index:33;pointer-events:auto}.i16{position:absolute;left:0;width:300px;height:169px;top:0}.ps102{position:relative;margin-left:23px;margin-top:-162px}.c95{z-index:34;pointer-events:auto;overflow:hidden;height:150px}.ps103{position:relative;margin-left:57px;margin-top:-4px}.s124{min-width:187px;width:187px;min-height:41px}.c96{z-index:57;pointer-events:auto;overflow:hidden;height:41px}.ps104{position:relative;margin-left:68px;margin-top:0}.s125{min-width:1076px;width:1076px;min-height:169px}.s126{min-width:300px;width:300px;min-height:169px}.s127{min-width:300px;width:300px;min-height:169px;height:169px}.c97{z-index:37;pointer-events:auto}.i17{position:absolute;left:0;width:300px;height:169px;top:0}.ps105{position:relative;margin-left:26px;margin-top:-161px}.c98{z-index:39;pointer-events:auto;overflow:hidden;height:150px}.ps106{position:relative;margin-left:101px;margin-top:0}.c99{z-index:36;pointer-events:auto}.ps107{position:relative;margin-left:26px;margin-top:-161px}.s128{min-width:248px;width:248px;min-height:150px}.c100{z-index:38;pointer-events:auto;overflow:hidden;height:150px}.ps108{position:relative;margin-left:75px;margin-top:0}.c101{z-index:24;pointer-events:auto}.ps109{position:relative;margin-left:26px;margin-top:-157px}.c102{z-index:40;pointer-events:auto;overflow:hidden;height:150px}.ps110{position:relative;margin-left:11px;margin-top:0}.s129{min-width:1084px;width:1084px;min-height:101px}.s130{min-width:750px;width:750px;min-height:101px}.ps111{position:relative;margin-left:120px;margin-top:0}.s131{min-width:589px;width:589px;min-height:41px}.s132{min-width:188px;width:188px;min-height:41px}.c103{z-index:87;pointer-events:auto;overflow:hidden;height:41px}.s133{min-width:187px;width:187px;min-height:38px}.c104{z-index:89;pointer-events:auto;overflow:hidden;height:38px}.ps112{position:relative;margin-left:0;margin-top:-15px}.c105{z-index:41;pointer-events:auto;overflow:hidden;height:75px}.ps113{position:relative;margin-left:147px;margin-top:0}.s134{min-width:187px;width:187px;min-height:41px}.c106{pointer-events:auto;overflow:hidden;height:41px}.ps114{position:relative;margin-left:68px;margin-top:19px}.s135{min-width:1076px;width:1076px;min-height:169px}.c107{z-index:43;pointer-events:auto}.ps115{position:relative;margin-left:26px;margin-top:-158px}.c108{z-index:46;pointer-events:auto;overflow:hidden;height:150px}.c109{z-index:42;pointer-events:auto}.ps116{position:relative;margin-left:26px;margin-top:-158px}.c110{z-index:45;pointer-events:auto;overflow:hidden;height:150px}.c111{z-index:25;pointer-events:auto}.c112{z-index:44;pointer-events:auto;overflow:hidden;height:150px}.s136{min-width:1084px;width:1084px;min-height:109px}.s137{min-width:750px;width:750px;min-height:109px}.s138{min-width:589px;width:589px;min-height:37px}.s139{min-width:188px;width:188px;min-height:37px}.c113{z-index:86;pointer-events:auto;overflow:hidden;height:37px}.c114{z-index:90;pointer-events:auto;overflow:hidden;height:37px}.ps117{position:relative;margin-left:0;margin-top:-7px}.c115{z-index:47;pointer-events:auto;overflow:hidden;height:79px}.c116{pointer-events:auto;overflow:hidden;height:37px}.ps118{position:relative;margin-left:64px;margin-top:18px}.s140{min-width:1072px;width:1072px;min-height:169px}.s141{min-width:300px;width:300px;min-height:169px}.c117{z-index:49;pointer-events:auto}.ps119{position:relative;margin-left:22px;margin-top:-161px}.s142{min-width:252px;width:252px;min-height:150px}.c118{z-index:51;pointer-events:auto;overflow:hidden;height:150px}.ps120{position:relative;margin-left:97px;margin-top:0}.c119{z-index:48;pointer-events:auto}.ps121{position:relative;margin-left:27px;margin-top:-161px}.s143{min-width:251px;width:251px;min-height:150px}.c120{z-index:50;pointer-events:auto;overflow:hidden;height:150px}.c121{z-index:26;pointer-events:auto}.ps122{position:relative;margin-left:27px;margin-top:-157px}.c122{z-index:52;pointer-events:auto;overflow:hidden;height:150px}.ps123{position:relative;margin-left:131px;margin-top:0}.s144{min-width:964px;width:964px;min-height:41px}.s145{min-width:187px;width:187px;min-height:38px}.c123{pointer-events:auto;overflow:hidden;height:38px}.ps124{position:relative;margin-left:75px;margin-top:67px}.s146{min-width:1076px;width:1076px;min-height:169px}.c124{z-index:55;pointer-events:auto}.ps125{position:relative;margin-left:26px;margin-top:-157px}.c125{z-index:59;pointer-events:auto;overflow:hidden;height:150px}.c126{z-index:54;pointer-events:auto}.ps126{position:relative;margin-left:23px;margin-top:-157px}.c127{z-index:58;pointer-events:auto;overflow:hidden;height:150px}.c128{z-index:53;pointer-events:auto}.c129{z-index:91;pointer-events:auto;overflow:hidden;height:150px}.s147{min-width:964px;width:964px;min-height:38px}.s148{min-width:188px;width:188px;min-height:38px}.ps127{position:relative;margin-left:0;margin-top:33px}.ps128{position:relative;margin-left:75px;margin-top:23px}.s149{min-width:1076px;width:1076px;min-height:210px}.s150{min-width:300px;width:300px;min-height:210px}.c130{z-index:62;pointer-events:auto}.c131{z-index:65;pointer-events:auto;overflow:hidden;height:150px}.ps129{position:relative;margin-left:56px;margin-top:3px}.s151{min-width:188px;width:188px;min-height:38px}.c132{pointer-events:auto;overflow:hidden;height:38px}.c133{z-index:60;pointer-events:auto}.c134{z-index:64;pointer-events:auto;overflow:hidden;height:150px}.ps130{position:relative;margin-left:57px;margin-top:0}.s152{min-width:187px;width:187px;min-height:41px}.c135{pointer-events:auto;overflow:hidden;height:41px}.ps131{position:relative;margin-left:75px;margin-top:4px}.s153{min-width:300px;width:300px;min-height:206px}.s154{min-width:300px;width:300px;min-height:168px;height:168px}.c136{z-index:61;pointer-events:auto}.i18{position:absolute;left:0;width:300px;height:168px;top:0}.ps132{position:relative;margin-left:23px;margin-top:-161px}.c137{z-index:63;pointer-events:auto;overflow:hidden;height:150px}.ps133{position:relative;margin-left:0;margin-top:11px}.c138{pointer-events:auto;overflow:hidden;height:79px}.s155{min-width:1076px;width:1076px;min-height:168px}.s156{min-width:300px;width:300px;min-height:168px}.c139{z-index:68;pointer-events:auto}.c140{z-index:71;pointer-events:auto;overflow:hidden;height:150px}.c141{z-index:67;pointer-events:auto}.c142{z-index:69;pointer-events:auto;overflow:hidden;height:150px}.c143{z-index:66;pointer-events:auto}.c144{z-index:70;pointer-events:auto;overflow:hidden;height:150px}.s157{min-width:964px;width:964px;min-height:42px}.s158{min-width:188px;width:188px;min-height:42px}.c145{pointer-events:auto;overflow:hidden;height:42px}.s159{min-width:187px;width:187px;min-height:42px}.ps134{position:relative;margin-left:11px;margin-top:3px}.s160{min-width:1133px;width:1133px;min-height:278px}.s161{min-width:750px;width:750px;min-height:278px}.c146{z-index:92;pointer-events:auto;overflow:hidden;height:79px}.ps135{position:relative;margin-left:57px;margin-top:-11px}.s162{min-width:675px;width:675px;min-height:169px}.c147{z-index:94;pointer-events:auto}.c148{z-index:100;pointer-events:auto;overflow:hidden;height:150px}.ps136{position:relative;margin-left:127px;margin-top:11px}.c149{z-index:96;pointer-events:auto;overflow:hidden;height:150px}.ps137{position:relative;margin-left:113px;margin-top:0}.ps138{position:relative;margin-left:0;margin-top:3px}@media (min-width:960px) and (max-width:1199px) {.ps71{margin-top:39px}.s91{min-width:960px;width:960px;min-height:3108px}.ps72{margin-left:150px}.s92{min-width:600px;width:600px;min-height:126px}.s93{min-width:600px;width:600px;min-height:111px}.c65{height:111px}.f20{font-size:53px;font-size:calc(53px * var(--f));line-height:1.831}.ps74{margin-top:-48px}.s94{min-width:600px;width:600px;min-height:63px}.c66{height:63px}.f21{font-size:29px;font-size:calc(29px * var(--f));line-height:1.760}.ps75{margin-top:48px}.s95{min-width:960px;width:960px;min-height:555px}.ps76{margin-top:9px}.s96{min-width:600px;width:600px;min-height:60px}.c67{height:60px}.ps77{margin-left:30px;margin-top:-24px}.s97{min-width:600px;width:600px;min-height:444px}.c68{height:63px}.ps78{margin-top:-24px}.s98{min-width:600px;width:600px;min-height:405px}.s99{min-width:600px;width:600px;min-height:63px}.c69{height:63px}.ps79{margin-top:-24px}.s100{min-width:600px;width:600px;min-height:63px}.c70{height:63px}.ps80{margin-top:-21px}.c71{height:63px}.ps81{margin-top:-15px}.c72{height:60px}.ps82{margin-top:-18px}.c73{height:60px}.ps83{margin-top:-21px}.s101{min-width:600px;width:600px;min-height:63px}.c74{height:63px}.ps84{margin-top:-18px}.c75{height:63px}.c76{height:60px}.ps85{margin-top:-15px}.c77{height:63px}.ps86{margin-top:-69px}.s102{min-width:330px;width:330px;min-height:555px}.s103{min-width:330px;width:330px;min-height:63px}.c78{height:63px}.s104{min-width:330px;width:330px;min-height:186px}.s105{min-width:330px;width:330px;min-height:186px;height:186px}.i12{width:330px;height:186px}.ps87{margin-left:9px;margin-top:-177px}.s106{min-width:312px;width:312px;min-height:36px}.c80{height:36px}.f22{font-size:14px;font-size:calc(14px * var(--f));line-height:1.858}.ps88{margin-top:-135px}.s107{min-width:330px;width:330px;min-height:135px}.c81{height:135px}.ps89{margin-top:18px}.s108{min-width:330px;width:330px;min-height:96px}.c82{height:96px}.f23{font-size:29px;font-size:calc(29px * var(--f))}.ps90{margin-top:6px}.s109{min-width:330px;width:330px;min-height:186px}.s110{min-width:330px;width:330px;min-height:186px;height:186px}.i14{width:330px;height:186px}.ps91{margin-left:9px;margin-top:-174px}.s111{min-width:312px;width:312px;min-height:33px}.c84{height:33px}.c85{height:135px}.ps92{margin-left:30px;margin-top:48px}.c86{height:60px}.ps93{margin-left:30px}.s112{min-width:891px;width:891px;min-height:213px}.s113{min-width:600px;width:600px;min-height:213px}.ps94{margin-left:30px}.s114{min-width:561px;width:561px;min-height:135px}.s115{min-width:240px;width:240px;min-height:135px}.s116{min-width:240px;width:240px;min-height:135px;height:135px}.i15{width:240px;height:135px}.ps95{margin-left:21px;margin-top:-126px}.s117{min-width:198px;width:198px;min-height:120px}.c88{height:120px}.ps96{margin-left:81px}.ps97{margin-left:18px;margin-top:-126px}.s118{min-width:201px;width:201px;min-height:120px}.c90{height:120px}.ps98{margin-left:75px}.s119{min-width:471px;width:471px;min-height:33px}.s120{min-width:150px;width:150px;min-height:33px}.c91{height:33px}.f24{font-size:14px;font-size:calc(14px * var(--f));line-height:1.858}.ps99{margin-left:171px}.s121{min-width:150px;width:150px;min-height:30px}.c92{height:30px}.ps100{margin-top:-18px}.c93{height:63px}.ps101{margin-left:51px;margin-top:3px}.s122{min-width:240px;width:240px;min-height:165px}.s123{min-width:240px;width:240px;min-height:135px;height:135px}.i16{width:240px;height:135px}.ps102{margin-left:18px;margin-top:-129px}.c95{height:120px}.ps103{margin-left:45px;margin-top:-3px}.s124{min-width:150px;width:150px;min-height:33px}.c96{height:33px}.ps104{margin-left:54px}.s125{min-width:861px;width:861px;min-height:135px}.s126{min-width:240px;width:240px;min-height:135px}.s127{min-width:240px;width:240px;min-height:135px;height:135px}.i17{width:240px;height:135px}.ps105{margin-left:21px;margin-top:-129px}.c98{height:120px}.ps106{margin-left:81px}.ps107{margin-left:21px;margin-top:-129px}.s128{min-width:198px;width:198px;min-height:120px}.c100{height:120px}.ps108{margin-left:60px}.ps109{margin-left:21px;margin-top:-126px}.c102{height:120px}.ps110{margin-left:9px}.s129{min-width:867px;width:867px;min-height:81px}.s130{min-width:600px;width:600px;min-height:81px}.ps111{margin-left:96px}.s131{min-width:471px;width:471px;min-height:33px}.s132{min-width:150px;width:150px;min-height:33px}.c103{height:33px}.s133{min-width:150px;width:150px;min-height:30px}.c104{height:30px}.ps112{margin-top:-12px}.c105{height:60px}.ps113{margin-left:117px}.s134{min-width:150px;width:150px;min-height:33px}.c106{height:33px}.ps114{margin-left:54px;margin-top:15px}.s135{min-width:861px;width:861px;min-height:135px}.ps115{margin-left:21px;margin-top:-126px}.c108{height:120px}.ps116{margin-left:21px;margin-top:-126px}.c110{height:120px}.c112{height:120px}.s136{min-width:867px;width:867px;min-height:87px}.s137{min-width:600px;width:600px;min-height:87px}.s138{min-width:471px;width:471px;min-height:30px}.s139{min-width:150px;width:150px;min-height:30px}.c113{height:30px}.c114{height:30px}.ps117{margin-top:-6px}.c115{height:63px}.c116{height:30px}.ps118{margin-left:51px;margin-top:15px}.s140{min-width:858px;width:858px;min-height:135px}.s141{min-width:240px;width:240px;min-height:135px}.ps119{margin-left:18px;margin-top:-129px}.s142{min-width:201px;width:201px;min-height:120px}.c118{height:120px}.ps120{margin-left:78px}.ps121{margin-left:21px;margin-top:-129px}.s143{min-width:201px;width:201px;min-height:120px}.c120{height:120px}.ps122{margin-left:21px;margin-top:-126px}.c122{height:120px}.ps123{margin-left:105px}.s144{min-width:771px;width:771px;min-height:33px}.s145{min-width:150px;width:150px;min-height:30px}.c123{height:30px}.ps124{margin-left:60px;margin-top:54px}.s146{min-width:861px;width:861px;min-height:135px}.ps125{margin-left:21px;margin-top:-126px}.c125{height:120px}.ps126{margin-left:18px;margin-top:-126px}.c127{height:120px}.c129{height:120px}.s147{min-width:771px;width:771px;min-height:30px}.s148{min-width:150px;width:150px;min-height:30px}.ps127{margin-top:27px}.ps128{margin-left:60px;margin-top:18px}.s149{min-width:861px;width:861px;min-height:168px}.s150{min-width:240px;width:240px;min-height:168px}.c131{height:120px}.ps129{margin-left:45px}.s151{min-width:150px;width:150px;min-height:30px}.c132{height:30px}.c134{height:120px}.ps130{margin-left:45px}.s152{min-width:150px;width:150px;min-height:33px}.c135{height:33px}.ps131{margin-left:60px;margin-top:3px}.s153{min-width:240px;width:240px;min-height:165px}.s154{min-width:240px;width:240px;min-height:135px;height:135px}.i18{width:240px;height:135px}.ps132{margin-left:18px;margin-top:-129px}.c137{height:120px}.ps133{margin-top:9px}.c138{height:63px}.s155{min-width:861px;width:861px;min-height:135px}.s156{min-width:240px;width:240px;min-height:135px}.c140{height:120px}.c142{height:120px}.c144{height:120px}.s157{min-width:771px;width:771px;min-height:33px}.s158{min-width:150px;width:150px;min-height:33px}.c145{height:33px}.s159{min-width:150px;width:150px;min-height:33px}.ps134{margin-left:9px}.s160{min-width:906px;width:906px;min-height:222px}.s161{min-width:600px;width:600px;min-height:222px}.c146{height:63px}.ps135{margin-left:45px;margin-top:-9px}.s162{min-width:540px;width:540px;min-height:135px}.c148{height:120px}.ps136{margin-left:102px;margin-top:9px}.c149{height:120px}.ps137{margin-left:90px}}@media (min-width:768px) and (max-width:959px) {.ps71{margin-top:31px}.s91{min-width:768px;width:768px;min-height:2487px}.ps72{margin-left:120px}.s92{min-width:480px;width:480px;min-height:101px}.s93{min-width:480px;width:480px;min-height:89px}.c65{height:89px}.f20{font-size:42px;font-size:calc(42px * var(--f));line-height:1.834}.ps74{margin-top:-38px}.s94{min-width:480px;width:480px;min-height:50px}.c66{height:50px}.f21{font-size:23px;font-size:calc(23px * var(--f));line-height:1.784}.ps75{margin-top:38px}.s95{min-width:768px;width:768px;min-height:444px}.ps76{margin-top:8px}.s96{min-width:480px;width:480px;min-height:48px}.c67{height:48px}.ps77{margin-left:24px;margin-top:-19px}.s97{min-width:480px;width:480px;min-height:355px}.c68{height:50px}.ps78{margin-top:-20px}.s98{min-width:480px;width:480px;min-height:325px}.s99{min-width:480px;width:480px;min-height:51px}.c69{height:51px}.ps79{margin-top:-19px}.s100{min-width:480px;width:480px;min-height:50px}.c70{height:50px}.ps80{margin-top:-16px}.c71{height:50px}.ps81{margin-top:-12px}.c72{height:48px}.ps82{margin-top:-15px}.c73{height:48px}.ps83{margin-top:-16px}.s101{min-width:480px;width:480px;min-height:50px}.c74{height:50px}.ps84{margin-top:-14px}.c75{height:50px}.c76{height:48px}.ps85{margin-top:-13px}.c77{height:51px}.ps86{margin-top:-56px}.s102{min-width:264px;width:264px;min-height:444px}.s103{min-width:264px;width:264px;min-height:51px}.c78{height:51px}.s104{min-width:264px;width:264px;min-height:149px}.s105{min-width:264px;width:264px;min-height:149px;height:149px}.i12{width:264px;height:149px}.ps87{margin-left:7px;margin-top:-142px}.s106{min-width:250px;width:250px;min-height:29px}.c80{height:29px}.f22{font-size:11px;font-size:calc(11px * var(--f));line-height:1.910}.ps88{margin-top:-108px}.s107{min-width:264px;width:264px;min-height:108px}.c81{height:108px}.ps89{margin-top:14px}.s108{min-width:264px;width:264px;min-height:77px}.c82{height:77px}.f23{font-size:23px;font-size:calc(23px * var(--f));line-height:1.044}.ps90{margin-top:5px}.s109{min-width:264px;width:264px;min-height:148px}.s110{min-width:264px;width:264px;min-height:148px;height:148px}.i14{width:264px;height:148px}.ps91{margin-left:7px;margin-top:-138px}.s111{min-width:250px;width:250px;min-height:26px}.c84{height:26px}.c85{height:108px}.ps92{margin-left:24px;margin-top:39px}.c86{height:48px}.ps93{margin-left:24px}.s112{min-width:713px;width:713px;min-height:170px}.s113{min-width:480px;width:480px;min-height:170px}.ps94{margin-left:24px}.s114{min-width:449px;width:449px;min-height:108px}.s115{min-width:192px;width:192px;min-height:108px}.s116{min-width:192px;width:192px;min-height:108px;height:108px}.i15{width:192px;height:108px}.ps95{margin-left:17px;margin-top:-101px}.s117{min-width:158px;width:158px;min-height:96px}.c88{height:96px}.ps96{margin-left:65px}.ps97{margin-left:14px;margin-top:-101px}.s118{min-width:161px;width:161px;min-height:96px}.c90{height:96px}.ps98{margin-left:60px}.s119{min-width:377px;width:377px;min-height:26px}.s120{min-width:120px;width:120px;min-height:26px}.c91{height:26px}.f24{font-size:11px;font-size:calc(11px * var(--f));line-height:1.910}.ps99{margin-left:137px}.s121{min-width:120px;width:120px;min-height:24px}.c92{height:24px}.ps100{margin-top:-14px}.c93{height:50px}.ps101{margin-left:41px;margin-top:2px}.s122{min-width:192px;width:192px;min-height:132px}.s123{min-width:192px;width:192px;min-height:109px;height:109px}.i16{width:192px;height:109px}.ps102{margin-left:14px;margin-top:-104px}.c95{height:96px}.ps103{margin-left:36px;margin-top:-3px}.s124{min-width:120px;width:120px;min-height:26px}.c96{height:26px}.ps104{margin-left:44px}.s125{min-width:688px;width:688px;min-height:108px}.s126{min-width:192px;width:192px;min-height:108px}.s127{min-width:192px;width:192px;min-height:108px;height:108px}.i17{width:192px;height:108px}.ps105{margin-left:16px;margin-top:-103px}.c98{height:96px}.ps106{margin-left:64px}.ps107{margin-left:17px;margin-top:-103px}.s128{min-width:159px;width:159px;min-height:96px}.c100{height:96px}.ps108{margin-left:48px}.ps109{margin-left:17px;margin-top:-100px}.c102{height:96px}.ps110{margin-left:7px}.s129{min-width:694px;width:694px;min-height:65px}.s130{min-width:480px;width:480px;min-height:65px}.ps111{margin-left:77px}.s131{min-width:377px;width:377px;min-height:26px}.s132{min-width:120px;width:120px;min-height:26px}.c103{height:26px}.s133{min-width:120px;width:120px;min-height:25px}.c104{height:25px}.ps112{margin-top:-9px}.c105{height:48px}.ps113{margin-left:94px}.s134{min-width:120px;width:120px;min-height:26px}.c106{height:26px}.ps114{margin-left:44px;margin-top:12px}.s135{min-width:688px;width:688px;min-height:108px}.ps115{margin-left:16px;margin-top:-101px}.c108{height:96px}.ps116{margin-left:17px;margin-top:-101px}.c110{height:96px}.c112{height:96px}.s136{min-width:694px;width:694px;min-height:70px}.s137{min-width:480px;width:480px;min-height:70px}.s138{min-width:377px;width:377px;min-height:24px}.s139{min-width:120px;width:120px;min-height:24px}.c113{height:24px}.c114{height:24px}.ps117{margin-top:-5px}.c115{height:51px}.c116{height:24px}.ps118{margin-left:41px;margin-top:11px}.s140{min-width:686px;width:686px;min-height:109px}.s141{min-width:192px;width:192px;min-height:109px}.ps119{margin-left:14px;margin-top:-103px}.s142{min-width:161px;width:161px;min-height:96px}.c118{height:96px}.ps120{margin-left:62px}.ps121{margin-left:17px;margin-top:-103px}.s143{min-width:161px;width:161px;min-height:96px}.c120{height:96px}.ps122{margin-left:17px;margin-top:-101px}.c122{height:96px}.ps123{margin-left:84px}.s144{min-width:617px;width:617px;min-height:26px}.s145{min-width:120px;width:120px;min-height:24px}.c123{height:24px}.ps124{margin-left:48px;margin-top:43px}.s146{min-width:689px;width:689px;min-height:108px}.ps125{margin-left:17px;margin-top:-100px}.c125{height:96px}.ps126{margin-left:14px;margin-top:-100px}.c127{height:96px}.c129{height:96px}.s147{min-width:617px;width:617px;min-height:24px}.s148{min-width:120px;width:120px;min-height:24px}.ps127{margin-top:21px}.ps128{margin-left:48px;margin-top:15px}.s149{min-width:689px;width:689px;min-height:135px}.s150{min-width:192px;width:192px;min-height:135px}.c131{height:96px}.ps129{margin-left:36px;margin-top:2px}.s151{min-width:120px;width:120px;min-height:25px}.c132{height:25px}.c134{height:96px}.ps130{margin-left:36px}.s152{min-width:120px;width:120px;min-height:27px}.c135{height:27px}.ps131{margin-left:48px;margin-top:3px}.s153{min-width:192px;width:192px;min-height:132px}.s154{min-width:192px;width:192px;min-height:107px;height:107px}.i18{width:192px;height:107px}.ps132{margin-left:14px;margin-top:-103px}.c137{height:96px}.ps133{margin-top:7px}.c138{height:50px}.s155{min-width:689px;width:689px;min-height:107px}.s156{min-width:192px;width:192px;min-height:107px}.c140{height:96px}.c142{height:96px}.c144{height:96px}.s157{min-width:617px;width:617px;min-height:27px}.s158{min-width:120px;width:120px;min-height:27px}.c145{height:27px}.s159{min-width:120px;width:120px;min-height:27px}.ps134{margin-left:7px;margin-top:2px}.s160{min-width:725px;width:725px;min-height:178px}.s161{min-width:480px;width:480px;min-height:178px}.c146{height:51px}.ps135{margin-left:37px;margin-top:-7px}.s162{min-width:432px;width:432px;min-height:108px}.c148{height:96px}.ps136{margin-left:81px;margin-top:7px}.c149{height:96px}.ps137{margin-left:72px}.ps138{margin-top:2px}}@media (min-width:480px) and (max-width:767px) {.ps71{margin-top:20px}.s91{min-width:480px;width:480px;min-height:1560px}.ps72{margin-left:75px}.s92{min-width:300px;width:300px;min-height:63px}.s93{min-width:300px;width:300px;min-height:55px}.c65{height:55px}.f20{font-size:27px;font-size:calc(27px * var(--f));line-height:1.816}.ps74{margin-top:-24px}.s94{min-width:300px;width:300px;min-height:32px}.c66{height:32px}.f21{font-size:15px;font-size:calc(15px * var(--f));line-height:1.734}.ps75{margin-top:24px}.s95{min-width:480px;width:480px;min-height:277px}.ps76{margin-top:4px}.s96{min-width:300px;width:300px;min-height:30px}.c67{height:30px}.ps77{margin-left:15px;margin-top:-12px}.s97{min-width:300px;width:300px;min-height:222px}.c68{height:32px}.ps78{margin-top:-12px}.s98{min-width:300px;width:300px;min-height:202px}.s99{min-width:300px;width:300px;min-height:31px}.c69{height:31px}.ps79{margin-top:-12px}.s100{min-width:300px;width:300px;min-height:32px}.c70{height:32px}.ps80{margin-top:-11px}.c71{height:32px}.ps81{margin-top:-8px}.c72{height:30px}.ps82{margin-top:-9px}.c73{height:30px}.ps83{margin-top:-10px}.s101{min-width:300px;width:300px;min-height:31px}.c74{height:31px}.ps84{margin-top:-9px}.c75{height:32px}.c76{height:30px}.ps85{margin-top:-7px}.c77{height:31px}.ps86{margin-top:-34px}.s102{min-width:165px;width:165px;min-height:277px}.s103{min-width:165px;width:165px;min-height:31px}.c78{height:31px}.s104{min-width:165px;width:165px;min-height:93px}.s105{min-width:165px;width:165px;min-height:93px;height:93px}.i12{width:165px;height:93px}.ps87{margin-left:5px;margin-top:-88px}.s106{min-width:156px;width:156px;min-height:18px}.c80{height:18px}.f22{font-size:7px;font-size:calc(7px * var(--f));line-height:1.858}.ps88{margin-top:-67px}.s107{min-width:165px;width:165px;min-height:67px}.c81{height:67px}.ps89{margin-top:9px}.s108{min-width:165px;width:165px;min-height:48px}.c82{height:48px}.f23{font-size:15px;font-size:calc(15px * var(--f))}.ps90{margin-top:3px}.s109{min-width:165px;width:165px;min-height:93px}.s110{min-width:165px;width:165px;min-height:93px;height:93px}.i14{width:165px;height:93px}.ps91{margin-left:5px;margin-top:-87px}.s111{min-width:156px;width:156px;min-height:17px}.c84{height:17px}.c85{height:67px}.ps92{margin-left:15px;margin-top:24px}.c86{height:30px}.ps93{margin-left:15px}.s112{min-width:446px;width:446px;min-height:113px}.s113{min-width:300px;width:300px;min-height:113px}.ps94{margin-left:15px}.s114{min-width:281px;width:281px;min-height:68px}.s115{min-width:120px;width:120px;min-height:68px}.s116{min-width:120px;width:120px;min-height:68px;height:68px}.i15{width:120px;height:68px}.ps95{margin-left:11px;margin-top:-63px}.s117{min-width:99px;width:99px;min-height:60px}.c88{height:60px}.ps96{margin-left:41px}.ps97{margin-left:9px;margin-top:-63px}.s118{min-width:100px;width:100px;min-height:60px}.c90{height:60px}.ps98{margin-left:38px}.s119{min-width:235px;width:235px;min-height:16px}.s120{min-width:75px;width:75px;min-height:16px}.c91{height:16px}.f24{font-size:7px;font-size:calc(7px * var(--f));line-height:1.858}.ps99{margin-left:85px}.s121{min-width:75px;width:75px;min-height:15px}.c92{height:15px}.ps100{margin-top:-3px}.c93{height:32px}.ps101{margin-left:26px;margin-top:2px}.s122{min-width:120px;width:120px;min-height:82px}.s123{min-width:120px;width:120px;min-height:67px;height:67px}.i16{width:120px;height:67px}.ps102{margin-left:9px;margin-top:-64px}.c95{height:60px}.ps103{margin-left:22px;margin-top:-1px}.s124{min-width:75px;width:75px;min-height:16px}.c96{height:16px}.ps104{margin-left:27px}.s125{min-width:431px;width:431px;min-height:67px}.s126{min-width:120px;width:120px;min-height:67px}.s127{min-width:120px;width:120px;min-height:67px;height:67px}.i17{width:120px;height:67px}.ps105{margin-left:11px;margin-top:-64px}.c98{height:60px}.ps106{margin-left:41px}.ps107{margin-left:10px;margin-top:-64px}.s128{min-width:99px;width:99px;min-height:60px}.c100{height:60px}.ps108{margin-left:30px}.ps109{margin-left:10px;margin-top:-63px}.c102{height:60px}.ps110{margin-left:5px}.s129{min-width:433px;width:433px;min-height:41px}.s130{min-width:300px;width:300px;min-height:41px}.ps111{margin-left:48px}.s131{min-width:235px;width:235px;min-height:17px}.s132{min-width:75px;width:75px;min-height:17px}.c103{height:17px}.s133{min-width:75px;width:75px;min-height:15px}.c104{height:15px}.ps112{margin-top:-6px}.c105{height:30px}.ps113{margin-left:58px}.s134{min-width:75px;width:75px;min-height:17px}.c106{height:17px}.ps114{margin-left:27px;margin-top:7px}.s135{min-width:431px;width:431px;min-height:68px}.ps115{margin-left:11px;margin-top:-63px}.c108{height:60px}.ps116{margin-left:10px;margin-top:-63px}.c110{height:60px}.c112{height:60px}.s136{min-width:433px;width:433px;min-height:43px}.s137{min-width:300px;width:300px;min-height:43px}.s138{min-width:235px;width:235px;min-height:15px}.s139{min-width:75px;width:75px;min-height:15px}.c113{height:15px}.c114{height:15px}.ps117{margin-top:-3px}.c115{height:31px}.c116{height:15px}.ps118{margin-left:26px;margin-top:8px}.s140{min-width:429px;width:429px;min-height:67px}.s141{min-width:120px;width:120px;min-height:67px}.ps119{margin-left:9px;margin-top:-64px}.s142{min-width:100px;width:100px;min-height:60px}.c118{height:60px}.ps120{margin-left:39px}.ps121{margin-left:10px;margin-top:-64px}.s143{min-width:101px;width:101px;min-height:60px}.c120{height:60px}.ps122{margin-left:10px;margin-top:-63px}.c122{height:60px}.ps123{margin-left:53px}.s144{min-width:385px;width:385px;min-height:17px}.s145{min-width:75px;width:75px;min-height:15px}.c123{height:15px}.ps124{margin-left:30px;margin-top:27px}.s146{min-width:431px;width:431px;min-height:67px}.ps125{margin-left:11px;margin-top:-63px}.c125{height:60px}.ps126{margin-left:9px;margin-top:-63px}.c127{height:60px}.c129{height:60px}.s147{min-width:385px;width:385px;min-height:15px}.s148{min-width:75px;width:75px;min-height:15px}.ps127{margin-top:14px}.ps128{margin-left:30px;margin-top:9px}.s149{min-width:431px;width:431px;min-height:84px}.s150{min-width:120px;width:120px;min-height:84px}.c131{height:60px}.ps129{margin-left:23px;margin-top:2px}.s151{min-width:75px;width:75px;min-height:15px}.c132{height:15px}.c134{height:60px}.ps130{margin-left:22px}.s152{min-width:75px;width:75px;min-height:17px}.c135{height:17px}.ps131{margin-left:30px;margin-top:1px}.s153{min-width:120px;width:120px;min-height:83px}.s154{min-width:120px;width:120px;min-height:68px;height:68px}.i18{width:120px;height:68px}.ps132{margin-left:9px;margin-top:-65px}.c137{height:60px}.ps133{margin-top:4px}.c138{height:32px}.s155{min-width:431px;width:431px;min-height:68px}.s156{min-width:120px;width:120px;min-height:68px}.c140{height:60px}.c142{height:60px}.c144{height:60px}.s157{min-width:385px;width:385px;min-height:16px}.s158{min-width:75px;width:75px;min-height:16px}.c145{height:16px}.s159{min-width:75px;width:75px;min-height:16px}.ps134{margin-left:5px;margin-top:2px}.s160{min-width:453px;width:453px;min-height:111px}.s161{min-width:300px;width:300px;min-height:111px}.c146{height:31px}.ps135{margin-left:22px;margin-top:-4px}.s162{min-width:270px;width:270px;min-height:67px}.c148{height:60px}.ps136{margin-left:51px;margin-top:4px}.c149{height:60px}.ps137{margin-left:45px}.ps138{margin-top:2px}}@media (max-width:479px) {.ps71{margin-top:13px}.s91{min-width:320px;width:320px;min-height:1040px}.ps72{margin-left:50px}.s92{min-width:200px;width:200px;min-height:42px}.s93{min-width:200px;width:200px;min-height:37px}.c65{height:37px}.f20{font-size:18px;font-size:calc(18px * var(--f));line-height:1.834}.ps74{margin-top:-16px}.s94{min-width:200px;width:200px;min-height:21px}.c66{height:21px}.f21{font-size:10px;font-size:calc(10px * var(--f));line-height:1.701}.ps75{margin-top:16px}.s95{min-width:320px;width:320px;min-height:185px}.ps76{margin-top:3px}.s96{min-width:200px;width:200px;min-height:20px}.c67{height:20px}.ps77{margin-left:10px;margin-top:-8px}.s97{min-width:200px;width:200px;min-height:148px}.c68{height:21px}.ps78{margin-top:-8px}.s98{min-width:200px;width:200px;min-height:135px}.s99{min-width:200px;width:200px;min-height:21px}.c69{height:21px}.ps79{margin-top:-8px}.s100{min-width:200px;width:200px;min-height:21px}.c70{height:21px}.ps80{margin-top:-7px}.c71{height:21px}.ps81{margin-top:-5px}.c72{height:20px}.ps82{margin-top:-6px}.c73{height:20px}.ps83{margin-top:-7px}.s101{min-width:200px;width:200px;min-height:21px}.c74{height:21px}.ps84{margin-top:-6px}.c75{height:21px}.c76{height:20px}.ps85{margin-top:-5px}.c77{height:21px}.ps86{margin-top:-23px}.s102{min-width:110px;width:110px;min-height:185px}.s103{min-width:110px;width:110px;min-height:21px}.c78{height:21px}.s104{min-width:110px;width:110px;min-height:62px}.s105{min-width:110px;width:110px;min-height:62px;height:62px}.i12{width:110px;height:62px}.ps87{margin-left:3px;margin-top:-59px}.s106{min-width:104px;width:104px;min-height:12px}.c80{height:12px}.f22{font-size:5px;font-size:calc(5px * var(--f));line-height:1.801}.ps88{margin-top:-45px}.s107{min-width:110px;width:110px;min-height:45px}.c81{height:45px}.ps89{margin-top:6px}.s108{min-width:110px;width:110px;min-height:32px}.c82{height:32px}.f23{font-size:10px;font-size:calc(10px * var(--f))}.ps90{margin-top:2px}.s109{min-width:110px;width:110px;min-height:62px}.s110{min-width:110px;width:110px;min-height:62px;height:62px}.i14{width:110px;height:62px}.ps91{margin-left:3px;margin-top:-58px}.s111{min-width:104px;width:104px;min-height:11px}.c84{height:11px}.c85{height:45px}.ps92{margin-left:10px;margin-top:16px}.c86{height:20px}.ps93{margin-left:10px}.s112{min-width:297px;width:297px;min-height:75px}.s113{min-width:200px;width:200px;min-height:75px}.ps94{margin-left:10px}.s114{min-width:187px;width:187px;min-height:45px}.s115{min-width:80px;width:80px;min-height:45px}.s116{min-width:80px;width:80px;min-height:45px;height:45px}.i15{width:80px;height:45px}.ps95{margin-left:7px;margin-top:-42px}.s117{min-width:66px;width:66px;min-height:40px}.c88{height:40px}.ps96{margin-left:27px}.ps97{margin-left:6px;margin-top:-42px}.s118{min-width:67px;width:67px;min-height:40px}.c90{height:40px}.ps98{margin-left:25px}.s119{min-width:157px;width:157px;min-height:11px}.s120{min-width:50px;width:50px;min-height:11px}.c91{height:11px}.f24{font-size:5px;font-size:calc(5px * var(--f));line-height:1.801}.ps99{margin-left:57px}.s121{min-width:50px;width:50px;min-height:10px}.c92{height:10px}.ps100{margin-top:-2px}.c93{height:21px}.ps101{margin-left:17px;margin-top:1px}.s122{min-width:80px;width:80px;min-height:55px}.s123{min-width:80px;width:80px;min-height:45px;height:45px}.i16{width:80px;height:45px}.ps102{margin-left:6px;margin-top:-43px}.c95{height:40px}.ps103{margin-left:15px;margin-top:-1px}.s124{min-width:50px;width:50px;min-height:11px}.c96{height:11px}.ps104{margin-left:18px}.s125{min-width:287px;width:287px;min-height:45px}.s126{min-width:80px;width:80px;min-height:45px}.s127{min-width:80px;width:80px;min-height:45px;height:45px}.i17{width:80px;height:45px}.ps105{margin-left:7px;margin-top:-43px}.c98{height:40px}.ps106{margin-left:27px}.ps107{margin-left:7px;margin-top:-43px}.s128{min-width:66px;width:66px;min-height:40px}.c100{height:40px}.ps108{margin-left:20px}.ps109{margin-left:7px;margin-top:-42px}.c102{height:40px}.ps110{margin-left:3px}.s129{min-width:289px;width:289px;min-height:27px}.s130{min-width:200px;width:200px;min-height:27px}.ps111{margin-left:32px}.s131{min-width:157px;width:157px;min-height:11px}.s132{min-width:50px;width:50px;min-height:11px}.c103{height:11px}.s133{min-width:50px;width:50px;min-height:10px}.c104{height:10px}.ps112{margin-top:-4px}.c105{height:20px}.ps113{margin-left:39px}.s134{min-width:50px;width:50px;min-height:11px}.c106{height:11px}.ps114{margin-left:18px;margin-top:5px}.s135{min-width:287px;width:287px;min-height:45px}.ps115{margin-left:7px;margin-top:-42px}.c108{height:40px}.ps116{margin-left:7px;margin-top:-42px}.c110{height:40px}.c112{height:40px}.s136{min-width:289px;width:289px;min-height:29px}.s137{min-width:200px;width:200px;min-height:29px}.s138{min-width:157px;width:157px;min-height:10px}.s139{min-width:50px;width:50px;min-height:10px}.c113{height:10px}.c114{height:10px}.ps117{margin-top:-2px}.c115{height:21px}.c116{height:10px}.ps118{margin-left:17px;margin-top:5px}.s140{min-width:286px;width:286px;min-height:45px}.s141{min-width:80px;width:80px;min-height:45px}.ps119{margin-left:6px;margin-top:-43px}.s142{min-width:67px;width:67px;min-height:40px}.c118{height:40px}.ps120{margin-left:26px}.ps121{margin-left:7px;margin-top:-43px}.s143{min-width:67px;width:67px;min-height:40px}.c120{height:40px}.ps122{margin-left:7px;margin-top:-42px}.c122{height:40px}.ps123{margin-left:35px}.s144{min-width:257px;width:257px;min-height:11px}.s145{min-width:50px;width:50px;min-height:10px}.c123{height:10px}.ps124{margin-left:20px;margin-top:18px}.s146{min-width:287px;width:287px;min-height:45px}.ps125{margin-left:7px;margin-top:-42px}.c125{height:40px}.ps126{margin-left:6px;margin-top:-42px}.c127{height:40px}.c129{height:40px}.s147{min-width:257px;width:257px;min-height:10px}.s148{min-width:50px;width:50px;min-height:10px}.ps127{margin-top:9px}.ps128{margin-left:20px;margin-top:6px}.s149{min-width:287px;width:287px;min-height:56px}.s150{min-width:80px;width:80px;min-height:56px}.c131{height:40px}.ps129{margin-left:15px;margin-top:1px}.s151{min-width:50px;width:50px;min-height:10px}.c132{height:10px}.c134{height:40px}.ps130{margin-left:15px}.s152{min-width:50px;width:50px;min-height:11px}.c135{height:11px}.ps131{margin-left:20px;margin-top:1px}.s153{min-width:80px;width:80px;min-height:55px}.s154{min-width:80px;width:80px;min-height:45px;height:45px}.i18{width:80px;height:45px}.ps132{margin-left:6px;margin-top:-43px}.c137{height:40px}.ps133{margin-top:3px}.c138{height:21px}.s155{min-width:287px;width:287px;min-height:45px}.s156{min-width:80px;width:80px;min-height:45px}.c140{height:40px}.c142{height:40px}.c144{height:40px}.s157{min-width:257px;width:257px;min-height:11px}.s158{min-width:50px;width:50px;min-height:11px}.c145{height:11px}.s159{min-width:50px;width:50px;min-height:11px}.ps134{margin-left:3px;margin-top:1px}.s160{min-width:302px;width:302px;min-height:74px}.s161{min-width:200px;width:200px;min-height:74px}.c146{height:21px}.ps135{margin-left:15px;margin-top:-3px}.s162{min-width:180px;width:180px;min-height:45px}.c148{height:40px}.ps136{margin-left:34px;margin-top:3px}.c149{height:40px}.ps137{margin-left:30px}.ps138{margin-top:1px}}</style>
+<link onload="this.media='all';this.onload=null;" rel="stylesheet" href="css/site.eef490.css" media="print">
+</head>
+<body id="b">
+<div class="ps71 v5 s91">
+<div class="v6 ps72 s92 c64">
+<div class="v6 ps73 s92 w3">
+<div class="v6 ps73 s93 c65">
+<p class="p6 f20">BITCOIN UNIVERSITY</p>
+</div>
+<div class="anim fadeInDown un28 v6 ps74 s94 c66">
+<p class="p6 f21">Learn about what matters in crypto.</p>
+</div>
+</div>
+</div>
+<div class="v6 ps75 s95 c64">
+<div class="anim fadeInDown un29 v6 ps76 s96 c67">
+<p class="p7 f21">Table of contents:</p>
+</div>
+<div class="v6 ps77 s97 w3">
+<div class="anim fadeInDown un30 v6 ps73 s94 c68">
+<p class="p7 f21">How cryptography works</p>
+</div>
+<div class="v6 ps78 s98 c64">
+<div class="v6 ps73 s98 w3">
+<div class="anim fadeInDown un31 v6 ps73 s99 c69">
+<p class="p7 f21">What bitcoin is</p>
+</div>
+<div class="anim fadeInDown un32 v6 ps79 s100 c70">
+<p class="p7 f21">What other coins are</p>
+</div>
+<div class="anim fadeInDown un33 v6 ps80 s94 c71">
+<p class="p7 f21">What smart contracts are</p>
+</div>
+<div class="anim fadeInDown un34 v6 ps81 s96 c72">
+<p class="p7 f21">What DAOs are</p>
+</div>
+<div class="anim fadeInDown un35 v6 ps82 s96 c73">
+<p class="p7 f21">What NFTs are</p>
+</div>
+<div class="anim fadeInDown un36 v6 ps83 s101 c74">
+<p class="p7 f21">Ways you can make money</p>
+</div>
+<div class="anim fadeInDown un37 v6 ps84 s100 c75">
+<p class="p7 f21">Ways you can loose money</p>
+</div>
+<div class="anim fadeInDown un38 v6 ps80 s96 c76">
+<p class="p7 f21">Why public keys are important</p>
+</div>
+<div class="anim fadeInDown un39 v6 ps85 s99 c77">
+<p class="p7 f21">Why private keys are important</p>
+</div>
+</div>
+</div>
+</div>
+<div class="v6 ps86 s102 w3">
+<div class="v6 ps73 s103 c78">
+<p class="p6 f21">How to use this site</p>
+</div>
+<div class="v6 ps73 s104 c64">
+<div class="v6 ps73 s104 w3">
+<div class="v6 ps73 s105 c79">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-110.webp 1x, images/video-220.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-110.png 1x, images/video-220.png 2x" media="(max-width:479px)">
+<source srcset="images/video-165.webp 1x, images/video-330.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-165.png 1x, images/video-330.png 2x" media="(max-width:767px)">
+<source srcset="images/video-264.webp 1x, images/video-528.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-264.png 1x, images/video-528.png 2x" media="(max-width:959px)">
+<source srcset="images/video-330-1.webp 1x, images/video-660.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-330-1.png 1x, images/video-660.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-412.webp 1x, images/video-824.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-412.png 1x, images/video-824.png 2x" media="(min-width:1200px)">
+<img src="images/video-824.png" class="un40 i12">
+</picture>
+</div>
+<div class="v6 ps87 s106 c80">
+<p class="p6 f22">INTRO VIDEO</p>
+</div>
+<div class="v6 ps88 s107 c81">
+<p class="p6 f22">Explaining who I am and how <br><br>I can help others understand simply</p>
+</div>
+</div>
+</div>
+<div class="v6 ps89 s108 c82">
+<p class="p6 f23">Why you should not trust everything you see on the internet</p>
+</div>
+<div class="v6 ps90 s109 c64">
+<div class="v6 ps73 s109 w3">
+<div class="v6 ps73 s110 c83">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-110.webp 1x, images/video-220.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-110.png 1x, images/video-220.png 2x" media="(max-width:479px)">
+<source srcset="images/video-165.webp 1x, images/video-330.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-165.png 1x, images/video-330.png 2x" media="(max-width:767px)">
+<source srcset="images/video-264-1.webp 1x, images/video-528-1.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-264-1.png 1x, images/video-528-1.png 2x" media="(max-width:959px)">
+<source srcset="images/video-330-1.webp 1x, images/video-660.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-330-1.png 1x, images/video-660.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-412-1.webp 1x, images/video-824-1.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-412-1.png 1x, images/video-824-1.png 2x" media="(min-width:1200px)">
+<img src="images/video-824-1.png" class="un41 i14">
+</picture>
+</div>
+<div class="v6 ps91 s111 c84">
+<p class="p6 f22">DISCLAMER VIDEO</p>
+</div>
+<div class="v6 ps88 s107 c85">
+<p class="p6 f22">To protect the owners of this site<br><br> from giving specific financial advice&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="anim fadeInDown un42 v6 ps92 s96 c86">
+<p class="p7 f21">How cryptography works</p>
+</div>
+<div class="v6 ps93 s112 c64">
+<div class="v6 ps73 s113 w3">
+<div class="v6 ps94 s114 c64">
+<div class="v6 ps73 s115 w3">
+<div class="v6 ps73 s116 c87">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120.webp 1x, images/video-240.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120.png 1x, images/video-240.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un43 i15">
+</picture>
+</div>
+<div class="v6 ps95 s117 c88">
+<p class="p7 f22">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+</div>
+<div class="v6 ps96 s115 w3">
+<div class="v6 ps73 s116 c89">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120.webp 1x, images/video-240.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120.png 1x, images/video-240.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un44 i15">
+</picture>
+</div>
+<div class="v6 ps97 s118 c90">
+<p class="p7 f22">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+</div>
+</div>
+<div class="v6 ps98 s119 c64">
+<div class="v6 ps73 s120 c91">
+<p class="p6 f24">Video Length: 2:00</p>
+</div>
+<div class="v6 ps99 s121 c92">
+<p class="p6 f24">Video Length: 5:00</p>
+</div>
+</div>
+<div class="anim fadeInDown un45 v6 ps100 s94 c93">
+<p class="p7 f21">What bitcoin is</p>
+</div>
+</div>
+<div class="v6 ps101 s122 w3">
+<div class="v6 ps73 s123 c94">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192-1.webp 1x, images/video-384-1.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192-1.png 1x, images/video-384-1.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un46 i16">
+</picture>
+</div>
+<div class="v6 ps102 s118 c95">
+<p class="p7 f22">Long video explaining things from an engineering perspective</p>
+</div>
+<div class="v6 ps103 s124 c96">
+<p class="p6 f24">Video Length: 25:00</p>
+</div>
+</div>
+</div>
+<div class="v6 ps104 s125 c64">
+<div class="v6 ps73 s126 w3">
+<div class="v6 ps73 s127 c97">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un47 i17">
+</picture>
+</div>
+<div class="v6 ps105 s118 c98">
+<p class="p7 f22">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+</div>
+<div class="v6 ps106 s126 w3">
+<div class="v6 ps73 s127 c99">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un48 i17">
+</picture>
+</div>
+<div class="v6 ps107 s128 c100">
+<p class="p7 f22">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+</div>
+<div class="v6 ps108 s126 w3">
+<div class="v6 ps73 s127 c101">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un49 i17">
+</picture>
+</div>
+<div class="v6 ps109 s128 c102">
+<p class="p7 f22">Long video explaining things from an engineering perspective</p>
+</div>
+</div>
+</div>
+<div class="v6 ps110 s129 c64">
+<div class="v6 ps73 s130 w3">
+<div class="v6 ps111 s131 c64">
+<div class="v6 ps73 s132 c103">
+<p class="p6 f24">Video Length: 2:00</p>
+</div>
+<div class="v6 ps99 s133 c104">
+<p class="p6 f24">Video Length: 5:00</p>
+</div>
+</div>
+<div class="anim fadeInDown un50 v6 ps112 s96 c105">
+<p class="p7 f21">What other coins are</p>
+</div>
+</div>
+<div class="v6 ps113 s134 c106">
+<p class="p6 f24">Video Length: 25:00</p>
+</div>
+</div>
+<div class="v6 ps114 s135 c64">
+<div class="v6 ps73 s115 w3">
+<div class="v6 ps73 s116 c107">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120.webp 1x, images/video-240.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120.png 1x, images/video-240.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un51 i15">
+</picture>
+</div>
+<div class="v6 ps115 s118 c108">
+<p class="p7 f22">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+</div>
+<div class="v6 ps106 s115 w3">
+<div class="v6 ps73 s116 c109">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120.webp 1x, images/video-240.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120.png 1x, images/video-240.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un52 i15">
+</picture>
+</div>
+<div class="v6 ps116 s128 c110">
+<p class="p7 f22">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+</div>
+<div class="v6 ps108 s115 w3">
+<div class="v6 ps73 s116 c111">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120.webp 1x, images/video-240.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120.png 1x, images/video-240.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un53 i15">
+</picture>
+</div>
+<div class="v6 ps116 s128 c112">
+<p class="p7 f22">Long video explaining things from an engineering perspective</p>
+</div>
+</div>
+</div>
+<div class="v6 ps110 s136 c64">
+<div class="v6 ps73 s137 w3">
+<div class="v6 ps111 s138 c64">
+<div class="v6 ps73 s139 c113">
+<p class="p6 f24">Video Length: 2:00</p>
+</div>
+<div class="v6 ps99 s121 c114">
+<p class="p6 f24">Video Length: 5:00</p>
+</div>
+</div>
+<div class="anim fadeInDown un54 v6 ps117 s99 c115">
+<p class="p7 f21">What smart contracts are</p>
+</div>
+</div>
+<div class="v6 ps113 s121 c116">
+<p class="p6 f24">Video Length: 25:00</p>
+</div>
+</div>
+<div class="v6 ps118 s140 c64">
+<div class="v6 ps73 s141 w3">
+<div class="v6 ps73 s123 c117">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192-1.webp 1x, images/video-384-1.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192-1.png 1x, images/video-384-1.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un55 i16">
+</picture>
+</div>
+<div class="v6 ps119 s142 c118">
+<p class="p7 f22">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+</div>
+<div class="v6 ps120 s141 w3">
+<div class="v6 ps73 s123 c119">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192-1.webp 1x, images/video-384-1.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192-1.png 1x, images/video-384-1.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un56 i16">
+</picture>
+</div>
+<div class="v6 ps121 s143 c120">
+<p class="p7 f22">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+</div>
+<div class="v6 ps108 s141 w3">
+<div class="v6 ps73 s123 c121">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192-1.webp 1x, images/video-384-1.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192-1.png 1x, images/video-384-1.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un57 i16">
+</picture>
+</div>
+<div class="v6 ps122 s143 c122">
+<p class="p7 f22">Long video explaining things from an engineering perspective</p>
+</div>
+</div>
+</div>
+<div class="v6 ps123 s144 c64">
+<div class="v6 ps73 s132 c106">
+<p class="p6 f24">Video Length: 2:00</p>
+</div>
+<div class="v6 ps99 s145 c123">
+<p class="p6 f24">Video Length: 5:00</p>
+</div>
+<div class="v6 ps72 s134 c106">
+<p class="p6 f24">Video Length: 25:00</p>
+</div>
+</div>
+<div class="anim fadeInDown un58 v6 ps90 s96 c86">
+<p class="p7 f21">What DAOs are</p>
+</div>
+<div class="v6 ps124 s146 c64">
+<div class="v6 ps73 s126 w3">
+<div class="v6 ps73 s127 c124">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un59 i17">
+</picture>
+</div>
+<div class="v6 ps125 s117 c125">
+<p class="p7 f22">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+</div>
+<div class="v6 ps96 s126 w3">
+<div class="v6 ps73 s127 c126">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un60 i17">
+</picture>
+</div>
+<div class="v6 ps126 s118 c127">
+<p class="p7 f22">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+</div>
+<div class="v6 ps108 s126 w3">
+<div class="v6 ps73 s127 c128">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un61 i17">
+</picture>
+</div>
+<div class="v6 ps126 s118 c129">
+<p class="p7 f22">Long video explaining things from an engineering perspective</p>
+</div>
+</div>
+</div>
+<div class="v6 ps123 s147 c64">
+<div class="v6 ps73 s148 c123">
+<p class="p6 f24">Video Length: 2:00</p>
+</div>
+<div class="v6 ps99 s145 c123">
+<p class="p6 f24">Video Length: 5:00</p>
+</div>
+<div class="v6 ps72 s145 c123">
+<p class="p6 f24">Video Length: 25:00</p>
+</div>
+</div>
+<div class="anim fadeInDown un62 v6 ps127 s96 c86">
+<p class="p7 f21">What NFTs are</p>
+</div>
+<div class="v6 ps128 s149 c64">
+<div class="v6 ps73 s150 w3">
+<div class="v6 ps73 s127 c130">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un63 i17">
+</picture>
+</div>
+<div class="v6 ps95 s117 c131">
+<p class="p7 f22">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+<div class="v6 ps129 s151 c132">
+<p class="p6 f24">Video Length: 2:00</p>
+</div>
+</div>
+<div class="v6 ps96 s150 w3">
+<div class="v6 ps73 s127 c133">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192.webp 1x, images/video-384.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192.png 1x, images/video-384.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300.webp 1x, images/video-600.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300.png 1x, images/video-600.png 2x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un64 i17">
+</picture>
+</div>
+<div class="v6 ps97 s118 c134">
+<p class="p7 f22">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+<div class="v6 ps130 s152 c135">
+<p class="p6 f24">Video Length: 5:00</p>
+</div>
+</div>
+<div class="v6 ps131 s153 w3">
+<div class="v6 ps73 s154 c136">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120.webp 1x, images/video-240.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120.png 1x, images/video-240.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192-2.webp 1x, images/video-384-2.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192-2.png 1x, images/video-384-2.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300-1.webp 1x, images/video-600-1.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300-1.png 1x, images/video-600-1.png 2x" media="(min-width:1200px)">
+<img src="images/video-600-1.png" class="un65 i18">
+</picture>
+</div>
+<div class="v6 ps132 s118 c137">
+<p class="p7 f22">Long video explaining things from an engineering perspective</p>
+</div>
+<div class="v6 ps130 s133 c132">
+<p class="p6 f24">Video Length: 25:00</p>
+</div>
+</div>
+</div>
+<div class="anim fadeInDown un66 v6 ps133 s100 c138">
+<p class="p7 f21">Ways you can make money</p>
+</div>
+<div class="v6 ps131 s155 c64">
+<div class="v6 ps73 s156 w3">
+<div class="v6 ps73 s154 c139">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120.webp 1x, images/video-240.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120.png 1x, images/video-240.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192-2.webp 1x, images/video-384-2.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192-2.png 1x, images/video-384-2.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300-1.webp 1x, images/video-600-1.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300-1.png 1x, images/video-600-1.png 2x" media="(min-width:1200px)">
+<img src="images/video-600-1.png" class="un67 i18">
+</picture>
+</div>
+<div class="v6 ps125 s117 c140">
+<p class="p7 f22">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+</div>
+<div class="v6 ps96 s156 w3">
+<div class="v6 ps73 s154 c141">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120.webp 1x, images/video-240.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120.png 1x, images/video-240.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192-2.webp 1x, images/video-384-2.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192-2.png 1x, images/video-384-2.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300-1.webp 1x, images/video-600-1.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300-1.png 1x, images/video-600-1.png 2x" media="(min-width:1200px)">
+<img src="images/video-600-1.png" class="un68 i18">
+</picture>
+</div>
+<div class="v6 ps126 s118 c142">
+<p class="p7 f22">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+</div>
+<div class="v6 ps108 s156 w3">
+<div class="v6 ps73 s154 c143">
+<picture class="consentPlaceholder i13">
+<source srcset="images/video-80.webp 1x, images/video-160.webp 2x" type="image/webp" media="(max-width:479px)">
+<source srcset="images/video-80.png 1x, images/video-160.png 2x" media="(max-width:479px)">
+<source srcset="images/video-120.webp 1x, images/video-240.webp 2x" type="image/webp" media="(max-width:767px)">
+<source srcset="images/video-120.png 1x, images/video-240.png 2x" media="(max-width:767px)">
+<source srcset="images/video-192-2.webp 1x, images/video-384-2.webp 2x" type="image/webp" media="(max-width:959px)">
+<source srcset="images/video-192-2.png 1x, images/video-384-2.png 2x" media="(max-width:959px)">
+<source srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" type="image/webp" media="(max-width:1199px)">
+<source srcset="images/video-240-1.png 1x, images/video-480.png 2x" media="(max-width:1199px)">
+<source srcset="images/video-300-1.webp 1x, images/video-600-1.webp 2x" type="image/webp" media="(min-width:1200px)">
+<source srcset="images/video-300-1.png 1x, images/video-600-1.png 2x" media="(min-width:1200px)">
+<img src="images/video-600-1.png" class="un69 i18">
+</picture>
+</div>
+<div class="v6 ps126 s118 c144">
+<p class="p7 f22">Long video explaining things from an engineering perspective</p>
+</div>
+</div>
+</div>
+<div class="v6 ps123 s157 c64">
+<div class="v6 ps73 s158 c145">
+<p class="p6 f24">Video Length: 2:00</p>
+</div>
+<div class="v6 ps99 s133 c132">
+<p class="p6 f24">Video Length: 5:00</p>
+</div>
+<div class="v6 ps72 s159 c145">
+<p class="p6 f24">Video Length: 25:00</p>
+</div>
+</div>
+<div class="v6 ps134 s160 c64">
+<div class="v6 ps73 s161 w3">
+<div class="anim fadeInDown un70 v6 ps73 s99 c146">
+<p class="p7 f21">Ways you can loose money</p>
+</div>
+<div class="v6 ps135 s162 c64">
+<div class="v6 ps73 s126 w3">
+<div class="v6 ps73 s127 c147">
+<picture class="consentPlaceholder i13 un266">
+<source data-srcset="images/video-80.webp 1x, images/video-160.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:479px)">
+<source data-srcset="images/video-80.png 1x, images/video-160.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:479px)">
+<source data-srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:767px)">
+<source data-srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:767px)">
+<source data-srcset="images/video-192.webp 1x, images/video-384.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:959px)">
+<source data-srcset="images/video-192.png 1x, images/video-384.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:959px)">
+<source data-srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:1199px)">
+<source data-srcset="images/video-240-1.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:1199px)">
+<source data-srcset="images/video-300.webp 1x, images/video-600.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(min-width:1200px)">
+<source data-srcset="images/video-300.png 1x, images/video-600.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un71 i17">
+</picture>
+</div>
+<div class="v6 ps115 s118 c148">
+<p class="p7 f22">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+</div>
+<div class="v6 ps136 s128 c149">
+<p class="p7 f22">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+</div>
+<div class="v6 ps137 s131 c64">
+<div class="v6 ps138 s145 c123">
+<p class="p6 f24">Video Length: 2:00</p>
+</div>
+<div class="v6 ps99 s132 c106">
+<p class="p6 f24">Video Length: 5:00</p>
+</div>
+</div>
+</div>
+<div class="v1 ps60 s79 c53">
+<picture class="consentPlaceholder i8 un263">
+<source data-srcset="images/video-80.webp 1x, images/video-160.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:479px)">
+<source data-srcset="images/video-80.png 1x, images/video-160.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:479px)">
+<source data-srcset="images/video-120-1.webp 1x, images/video-240-2.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:767px)">
+<source data-srcset="images/video-120-1.png 1x, images/video-240-2.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:767px)">
+<source data-srcset="images/video-192.webp 1x, images/video-384.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:959px)">
+<source data-srcset="images/video-192.png 1x, images/video-384.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:959px)">
+<source data-srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:1199px)">
+<source data-srcset="images/video-240-1.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:1199px)">
+<source data-srcset="images/video-300.webp 1x, images/video-600.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(min-width:1200px)">
+<source data-srcset="images/video-300.png 1x, images/video-600.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(min-width:1200px)">
+<img src="images/video-600.png" class="un72 i7">
+</picture>
+</div>
+<div class="v1 ps61 s80 w1">
+<div class="v1 ps3 s81 c54">
+<picture class="consentPlaceholder i8 un264">
+<source data-srcset="images/video-80.webp 1x, images/video-160.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:479px)">
+<source data-srcset="images/video-80.png 1x, images/video-160.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:479px)">
+<source data-srcset="images/video-120.webp 1x, images/video-240.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:767px)">
+<source data-srcset="images/video-120.png 1x, images/video-240.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:767px)">
+<source data-srcset="images/video-192.webp 1x, images/video-384.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:959px)">
+<source data-srcset="images/video-192.png 1x, images/video-384.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:959px)">
+<source data-srcset="images/video-240-1.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:1199px)">
+<source data-srcset="images/video-240-1.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:1199px)">
+<source data-srcset="images/video-300-1.webp 1x, images/video-600-1.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(min-width:1200px)">
+<source data-srcset="images/video-300-1.png 1x, images/video-600-1.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(min-width:1200px)">
+<img src="images/video-600-1.png" class="un73 i9">
+</picture>
+</div>
+<div class="v1 ps62 s82 c55">
+<p class="p1 f18">Long video explaining things from an engineering perspective</p>
+</div>
+<div class="v1 ps63 s83 c56">
+<p class="p2 f19">Video Length: 25:00</p>
+</div>
+</div>
+</div>
+<div class="v1 ps64 s84 c3">
+<div class="v1 ps65 s85 c57">
+<p class="p1 f19">Want to stay up to date on what&rsquo;s new in crypto solutions?</p>
+</div>
+<div class="v1 ps66 s86 c58">
+<input type="text" value="(Enter your email here?" name="text" class="input1">
+</div>
+</div>
+<div class="v1 ps67 s87 c59">
+<p class="p1 f19">We&rsquo;ll send you a 2min an email once a week with bullet points and links you can click on to keep you up to date</p>
+</div>
+<div class="v1 ps68 s88 c60">
+<p class="p2 f19">Want to get breaking news on coins, contracts, and opportunities?<br>Join us for $100 a month, everything else we offer is free.</p>
+</div>
+<div class="v1 ps69 s89 c61">
+<picture class="i11 un265">
+<source data-srcset="images/pasted-image-62.webp 1x, images/pasted-image-124.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:479px)">
+<source data-srcset="images/pasted-image-62.jpg 1x, images/pasted-image-124.jpg 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:479px)">
+<source data-srcset="images/pasted-image-94.webp 1x, images/pasted-image-188.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:767px)">
+<source data-srcset="images/pasted-image-94.jpg 1x, images/pasted-image-188.jpg 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:767px)">
+<source data-srcset="images/pasted-image-149.webp 1x, images/pasted-image-298.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:959px)">
+<source data-srcset="images/pasted-image-149.jpg 1x, images/pasted-image-298.jpg 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:959px)">
+<source data-srcset="images/pasted-image-187.webp 1x, images/pasted-image-374.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(max-width:1199px)">
+<source data-srcset="images/pasted-image-187.jpg 1x, images/pasted-image-374.jpg 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(max-width:1199px)">
+<source data-srcset="images/pasted-image-233.webp 1x, images/pasted-image-466.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp" media="(min-width:1200px)">
+<source data-srcset="images/pasted-image-233.jpg 1x, images/pasted-image-466.jpg 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" media="(min-width:1200px)">
+<img src="images/pasted-image-466.jpg" class="un74 i10">
+</picture>
+</div>
+<div class="v1 ps70 s90 c62">
+<p class="p2 f19">Pay pal will collect your email for us.</p>
+</div>
+</div>
+<div class="btf c63">
+</div>
+<script>var p=document.createElement("P");p.innerHTML="&nbsp;",p.style.cssText="position:fixed;visible:hidden;font-size:100px;zoom:1",document.body.appendChild(p);var rsz=function(e){return function(){var r=parseInt(1e7/parseFloat(window.getComputedStyle(e).getPropertyValue("font-size"))+.5)/1e5,n=document.body;r!=n.style.getPropertyValue("--f")&&n.style.setProperty("--f",r)}}(p);if("ResizeObserver"in window){var ro=new ResizeObserver(rsz);ro.observe(p)}else if("requestAnimationFrame"in window){var raf=function(){rsz(),window.requestAnimationFrame(raf)};window.requestAnimationFrame(raf)}else setInterval(rsz,100);</script>
+
+<script>dpth="/";!function(){for(var e=["js/woolite.2a4ecf.js","js/jquery.2a4ecf.js","js/bu.eef490.js"],n={},s=-1,t=function(t){var o=new XMLHttpRequest;o.open("GET",e[t],!0),o.onload=function(){for(n[t]=o.responseText;s<3&&void 0!==n[s+1];){s++;var e=document.createElement("script");e.textContent=n[s],document.body.appendChild(e)}},o.send()},o=0;o<3;o++)t(o)}();
+</script>
+</body>
+</html>
